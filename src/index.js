@@ -1,17 +1,53 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { Component } from "react";
+import ReactDom from "react-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+// Function Component
+// function Abc() {
+//     return <h1>Hello World</h1>
+// }
+
+//By Using Arrow Function
+const Welcome = () =><h2>Welcome To Jamui</h2>      //Function Components 
+
+ReactDom.render(
+    <Welcome/>,
+    document.getElementById('root')
+
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+class Hello extends Component{
+    render(){
+        return <h2>Shubham Kumar</h2>
+    }
+}
+
+
+
+
+
+
+// Day - 1 Pratices
+
+// function HelloWorld(){
+//     return React.createElement(
+//         'span', 
+//         {}, 
+//         React.createElement('div', {},'First Child',
+//             React.createElement('div', {}, 'Second Child' )
+//         )
+//     )
+//         // <>
+//         //     <h1>Hello World</h1>
+//         //     <h2>Hello Jamui</h2>
+//         //     <h2>Prachi Singh</h2>
+//         // </>
+    
+// }
+// ReactDom.render(
+//     <HelloWorld />,
+//     document.querySelector('#root')
+// );
+// ReactDom.render(
+//     <h1>Hello World</h1>,
+//     document.getElementById('root')
+// );
